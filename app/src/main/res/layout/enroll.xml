@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnrollActivity"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:gravity="center"
+    android:id="@+id/lly">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_aa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon"
+        android:backgroundTint="#20B2AA"
+        android:onClick="clickFab"
+        app:layout_anchor="@id/lly"
+        app:layout_anchorGravity="bottom|right"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_enroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:text="注册"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="用户名"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="密码"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="确认密码"
+                android:textColorHint="@color/white" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/enrollbutton"
+                android:text="注册"
+                android:textColor="@color/green" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
